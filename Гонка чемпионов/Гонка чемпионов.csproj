@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6A55B3B5-C53C-4AD2-A1A0-4598EAE30A12}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Гонка_чемпионов</RootNamespace>
+    <AssemblyName>Гонка чемпионов</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AchGet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AchGet.Designer.cs">
+      <DependentUpon>AchGet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Achievements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Achievements.Designer.cs">
+      <DependentUpon>Achievements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarsCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarsCard.Designer.cs">
+      <DependentUpon>CarsCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Champions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Champions.Designer.cs">
+      <DependentUpon>Champions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Complexity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Complexity.Designer.cs">
+      <DependentUpon>Complexity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game.Designer.cs">
+      <DependentUpon>Game.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rules.Designer.cs">
+      <DependentUpon>Rules.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AchGet.resx">
+      <DependentUpon>AchGet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Achievements.resx">
+      <DependentUpon>Achievements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarsCard.resx">
+      <DependentUpon>CarsCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Champions.resx">
+      <DependentUpon>Champions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Complexity.resx">
+      <DependentUpon>Complexity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game.resx">
+      <DependentUpon>Game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rules.resx">
+      <DependentUpon>Rules.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-minimize-sign-5700496.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Тире_2 %281%29 %281%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1677137080_foni-club-p-gonki-art-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-start-1505512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1654739453_42-celes-club-p-oboi-chernie-soti-krasivie-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1654739399_31-celes-club-p-oboi-chernie-soti-krasivie-35.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enny1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enny2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-love-3179385.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlackHurt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconoir_copy.svg %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-minimize-sign-5700496_photo-resizer.ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_photo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expand_photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Collapse_photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Collapse_photo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expand_photo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_photo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expand_photo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Collapse_photo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_photo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expand_photo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Collapse_photo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-star-616655.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-6m4Aw75jqeP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resize2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1623480034_7-phonoteka_org-p-doroga-vid-sverkhu-tekstura-krasivo-91.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resize3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cartoon-cute-pigeon-character-in-different-pose-and-emotions-isolated-set-collections_133260-3371.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pigeon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnnyCar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cartoon-cute-pigeon-character-in-different-pose-and-emotions-isolated-set-collections_133260-3371%282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pigeon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stone2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2023-09-05_22-39-27.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pigeon3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pigeon4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pigeon5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0cJWbQf3DT.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin-flip-43.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coin1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-dollar-5227095.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-dollar-6068681.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ez1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoe1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ez2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ez.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoe2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-task-7079987.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1654739399_31-celes-club-p-oboi-chernie-soti-krasivie-351.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-number-20-9808819.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-gold-4133427.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-racing-car-2359603.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-tank-3111484.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-sport-car-3085330.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-racing-flag-7656005.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-trophy-2784484.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-frame-5088683.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-frame-5088683 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-treasure-chest-3275621.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-chevron-248743.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-chevron-248744.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sveyn1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sveyn2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sveyn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SveynMid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sett1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sett2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SettMid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sett.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1623480034_7-phonoteka_org-p-doroga-vid-sverkhu-tekstura-krasivo-9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Evelin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Evelin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Evelin2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EvelinMid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2023-10-08_16-50-34.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2023-10-08_16-50-37.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2023-10-08_16-50-40.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2023-10-08_16-50-43.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekko.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekko1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekko2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EkkoMid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wasd2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wasd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escapar.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
